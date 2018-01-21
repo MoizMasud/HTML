@@ -1,22 +1,134 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Home Page</title>
+<html lang="en-US">
+<head> <!-- this section contains info that we do not see in our page -->
+  <meta charset="UTF-8"> <!--tells the browser how to process the page -->
+  <meta name="description" content="Practice of HTML">
+  <meta name="keywords" content="practice html, html practice, html course">
+  <link href="structure.css" rel="stylesheet"></link>
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+  <title>Home Page</title>
 </head>
-<body></body>
+
+<body>
 <!-- comments help the developer leave messages about the code -->
 <p>Welcome to my personal <a href="index.html">Home Page</a></p>
 <p>email me at: <a href"mailto:moizkhan_007@hotmail.com">Here</a></p>
 <hr>
-<h2>Home Page</h2>
-<p>-<a href="subpages/my_friends.html">my friends</a></p>
-<p>-<a href="my_plans.html">my plans</a></p>
-<p>-<a href="my_work.html">my work</a></p>
-<p><a target="_blank" href="http://google.com">Google</a></p>
+</body>
 
-<ol type="I">
-  <li>Apples</li>
-  <li>Oranges</li>
-  <li>Bananas</li>
+
+<p class="italic">Class Italic testing</p>
+<p>some text,testing<span class="italic"> this should be italic now</span></p>
+
+<h2>Home Page</h2>
+<center>
+
+  <nav id="menu">
+    <li><a href="subpages/my_friends.html">my friends</a></li>
+    <li><a href="my_plans.html">About</a></li>
+    <li><a href="my_work.html">Projects</a></li>
+    <li><a target="_blank" href="http://github.com/MoizMasud">GitHub</a></li>
+  </nav>
+  <br>
+  <img id="profile" src="images/scooby.png" >
+  <br>
+</center>
+
+
+
+<h3 class="superh3">sometext for class selector</h3>
+<h3 id="someid">sometext for id selector </h3>
+<form name="login" action="sever.php" method="post">
+  Username:<input type="text" name="username" size="20">
+  Password:<input type="password" name="password" size="20">
+  <br>
+  Favourite Ride:
+  <br>
+  <select name="cars">
+    <option value="benz"> Benz</option>
+    <option value="bemmer"> Bemmer</option>
+    <option value="bentley"> Bently</option>
+  </select>
+  <br>
+  What your gender:
+  <input type="checkbox" name="gender" checked="true" value="male">Male</input>
+  <input type="checkbox" name="gender" value="female">Female</input>
+  <br>
+  <br>
+  Favourite sport:
+  <input type="radio" name="sports" value="basketball">Basketball</input>
+  <input type="radio" name="sports" value="Hockey">Hockey</input>
+  <input type="radio" name="sports" value="Baseball">Baseball</input>
+  <input type="radio" name="sports" value="Cricket">Cricket</input>
+  <br>
+
+  Comments:
+  <br>
+<textarea id="textbox" name="comments" rows="10" cols="30"></textarea>
+<br>
+  <input type="submit"> <!--creates a submit button -->
+</form>
+
+<form name="signup">
+</form>
+<br>
+<div id="favfruits">My favourite fruits:
+  <br>
+
+  <ol type="I">
+    <li>Mangos</li>
+    <li>Pomogranete</li>
+    <li>Pineapples</li>
+  </ol>
+
+  <ol id="protien">
+    <li>Fish</li>
+    <li>Chicken</li>
+    <li>Beef</li>
+  </ol>
+
+</div>
+<table>
+
+  <tfoot>
+    <tr>
+        <td colspan="3">By Moiz Masud, Any copyright report to Moiz Masud</td>
+    </tr>
+  </tfoot>
+
+<thead>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+</thead>
+  <tr>
+    <td>column 1:</td>
+    <td>column 2:</td>
+    <td>column 3:</td>
+  </tr>
+
+  <tr>
+    <td>column 1 of second tag:</td>
+    <td>column 2 of second tag:</td>
+    <td>column 3 of second tag:</td>
+  </tr>
+
+</table>
+
+<h1>Fixed vs Fluild Layouts</h1>
+<div id="fluild">
+    <p>testing fluild layout..abcdefghijklmnopqrstuvwxyz.//afdaddsafasfdsafasdfasdfasdfasasfadsfadsfasdfasdfadsfasdadfsdasfas..etc</p>
+</div>
+<ol id="names" type="I">
+  <li>arvin</li>
+  <li>Jedra</li>
+  <li>2sif</li>
+  <li>nissar</li>
+  <li>Srjdan</li>
 </ol>
+<div id="fixed">
+    <p>testing fixed layout..abcdefghijklmnopqrstuvwxyz.//dafasdfasfasdfsdafsadfasfdsafdasfgdfggfsgfafafgagffgffafaaffagfgafag..etc</p>
+</div>
 </html>
